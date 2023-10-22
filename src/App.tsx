@@ -12,9 +12,10 @@ function App() {
         e.preventDefault();
       }
       if (e.key === 'Backspace') {
-        if (text.length > 0){
-          setText(prevText => prevText.slice(0,-1))
-        }
+        setText(prevText => {
+          if (prevText === '') return '';
+          return prevText.slice(0,-1);
+        })
         return;
       }
       if (e.key === 'Alt' || e.key === 'Tab' || e.key === 'Meta' || e.key === 'Control' || e.key === "CapsLock"){
