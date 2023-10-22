@@ -13,7 +13,7 @@ function App() {
       }
       if (e.key === 'Backspace') {
         if (text.length > 0){
-          setText(prevText => prevText.slice(0,-2))
+          setText(prevText => prevText.slice(0,-1))
         }
         return;
       }
@@ -24,7 +24,11 @@ function App() {
         setCAPS(()=>true);
         return;
       }
-      setText(prevText => prevText + (CAPS ? e.key.toUpperCase() : e.key)); // use functional update
+      if (e.key === "Enter") {
+        setText(prevText => prevText + '\n');
+        return;
+      }
+      setText(prevText => prevText + (CAPS ? e.key.toUpperCase() : e.key));
     };
 
     const handleKeyUp = (e: KeyboardEvent) => {
@@ -49,7 +53,7 @@ function App() {
       <p>
         {text.length > 0 ? `words:${text.split(' ').filter(string=>string!='').length}\nletters:${text.replaceAll(' ', '').length}` : 'start typing morning pages'}
       </p>
-      {/* <p>{text}</p> */}
+      <p>{text}</p>
     </>
   )
 }
