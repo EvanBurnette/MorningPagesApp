@@ -1,18 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/react': ^18.2.15
-  '@types/react-dom': ^18.2.7
-  '@typescript-eslint/eslint-plugin': ^6.0.0
-  '@typescript-eslint/parser': ^6.0.0
-  '@vitejs/plugin-react': ^4.0.3
-  eslint: ^8.45.0
+  '@types/react': ^18.2.31
+  '@types/react-dom': ^18.2.14
+  '@typescript-eslint/eslint-plugin': ^6.8.0
+  '@typescript-eslint/parser': ^6.8.0
+  '@vitejs/plugin-react': ^4.1.0
+  eslint: ^8.52.0
   eslint-plugin-react-hooks: ^4.6.0
   eslint-plugin-react-refresh: ^0.4.3
   react: ^18.2.0
   react-dom: ^18.2.0
-  typescript: ^5.0.2
-  vite: ^4.4.5
+  typescript: ^5.2.2
+  vite: ^4.5.0
 
 dependencies:
   react: 18.2.0
@@ -851,7 +851,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001552
+      caniuse-lite: 1.0.30001553
       electron-to-chromium: 1.4.563
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13_browserslist@4.22.1
@@ -862,8 +862,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite/1.0.30001552:
-    resolution: {integrity: sha512-WXdqNcUo7OKqFOpXZdVnrSC1vRfzPrMWwmxwHsoC+J7YjTLbGiqo0LUAGAmKXdMEqHL14RWJTWCuWT5md43tkA==}
+  /caniuse-lite/1.0.30001553:
+    resolution: {integrity: sha512-N0ttd6TrFfuqKNi+pMgWJTb9qrdJu4JSpgPFLe/lrD19ugC6fZgF0pUewRowDwzdDnb9V41mFcdlYgl/PyKf4A==}
     dev: true
 
   /chalk/2.4.2:
