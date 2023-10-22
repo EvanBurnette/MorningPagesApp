@@ -51,10 +51,10 @@ function App() {
 
   return (
     <>
-      <p>
+      <h1>
         {text.length > 0 ? `words:${text.split(' ').filter(string=>string!='').length}\nletters:${text.replaceAll(' ', '').length}` : 'start typing morning pages'}
-      </p>
-      <p>{text}</p>
+      </h1>
+      {/* <pre>{text}</pre> */}
     </>
   )
 }
