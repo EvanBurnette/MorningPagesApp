@@ -65,8 +65,7 @@ function App() {
       <h1>
         {text.length > 0 ? `words:${text.split(' ').filter(string=>string!='').length}\nletters:${text.replaceAll(' ', '').length}` : 'start typing morning pages'}
       </h1>
-      {/* {<pre>{text}</pre>} */}
-      {text.split(' ').filter(string=>string!='').length > 1000 ? `${text}` : ``}
+      {text.split(' ').filter(string=>string!='').length > 1000 ? `${<pre>{text}</pre>}` : ``}
     </>
   )
 }
